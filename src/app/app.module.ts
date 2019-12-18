@@ -9,11 +9,18 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { LoginComponent } from './components/public/login/login.component';
+
+import { FormsModule } from '@angular/forms'
+  import { from } from 'rxjs';
+import { MenuComponent } from './components/admin/menu/menu.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +28,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    FormsModule
 
   ],
   providers: [],

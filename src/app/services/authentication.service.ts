@@ -23,10 +23,12 @@ export class AuthenticationService {
     return this.afAuth.auth.signOut();
   }
 
-  resetPassaword(email: string)
+  resetPassaword(email: string): Promise<void>
   {
-    this.afAuth.auth.sendPasswordResetEmail(email);
+   return  this.afAuth.auth.sendPasswordResetEmail(email);
   }
 
-  
+  authUser(): Observable<firebase.User>{
+    return this.user;
+  }
 }

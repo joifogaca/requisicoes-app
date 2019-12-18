@@ -9,4 +9,12 @@ export class Requisicao extends Model {
     descricao: string;
     status: string;
     destino: Departamento;
+    movimentacoes: Movimentacao[];
+}
+
+export class Movimentacao extends Model {
+    funcionario: Funcionario;
+    dataHora: Date;
+    status: string;
+    descricao: string;
 }

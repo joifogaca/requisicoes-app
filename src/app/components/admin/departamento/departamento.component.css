@@ -1,3 +1,7 @@
+.ng-invalid:not(form) {
+    background-color: rgb(235, 185, 185);
+}
+
 .ui-grid-row div {
     padding: 4px 10px
 }

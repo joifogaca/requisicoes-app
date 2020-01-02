@@ -8,12 +8,12 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule, 
+    CommonModule,
     FormsModule,
     PrimeNGModule
   ],
   exports: [
-      CommonModule, 
+      CommonModule,
       FormsModule,
       PrimeNGModule
   ]

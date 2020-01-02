@@ -3,7 +3,8 @@
     <div class="card col-lg-12 bg-light col-centered">
       <div class="card-header">
         <h3> Departamentos
-          <button type="button" style="margin-right: 0px" (click)="add()" class="text-right btn btn-outline-info btn-lg">
+          <button type="button" style="margin-right: 0px" (click)="add()" 
+          class="text-right btn btn-outline-info btn-lg">
             <i class="pi pi-plus-circle" aria-hidden="true"></i>
           </button>
         </h3>
@@ -23,10 +24,10 @@
               <td class="text-center">{{departamento.telefone}}</td>
               <td class="text-center">
                 <button type="button" (click)="selecionaDepartamento(departamento)" class="btn btn-success  ">
-                  <i class="fas fa-edit"></i>
+                  <i class="pi pi-pencil"></i>
                 </button>
                 <button type="button" (click)="delete(departamento)" class="btn btn-danger  ">
-                  <i class="fas fa-trash"></i>
+                  <i class="pi pi-trash"></i>
                 </button>
               </td>
             </tr>

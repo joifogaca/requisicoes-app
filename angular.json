@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "requisicoes-app"
+    }
+  },
+  "defaultProject": "requisicoes-app",
+  "cli": {
+    "analytics": "f7f211c6-464e-499c-b016-211a0adf21a4"
+  }
 }
